@@ -1,6 +1,6 @@
 # Fetch Frontend Take-Home Exercise
 
-View Live at [https://fetch-project-theta.vercel.app/dogs](https://fetch-project-theta.vercel.app/dogs)
+View Live at [https://fetch-project-theta.vercel.app](https://fetch-project-theta.vercel.app)
 
 ## Running Locally
 

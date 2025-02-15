@@ -1,0 +1,25 @@
+// OPTIMIZATIONS
+    / Remove unnecessary re-renders and calls to api
+    / Currently whenever a favorite is added/removed, we are re-fetching the whole list of favorites. We should not be making any api call if a favorite is removed, and we should only make a call for the new dog when a favorite is added and push the new dog to local array
+    / Sometimes when on the last page of results, more than the expected amount of results are returned (might only be for unfiltered results)
+        *** encountering new error where last page of unfiltered results is returning nothing
+
+// TOP PRIORITIES
+    / Catch errors like email not being an actual email before sending to server
+    / As you scroll down and add favorites, the "find match" and list of favorites gets farther and farther away (make sticky)
+    / Convert zip codes into city/state
+    / There are currently no limitations on the favorites list. Should add boundaries for maxNumberAllowed or maxNumberShown+showFullList
+    / Images are not consistent sizes so sometimes images are too small for space provided (matched-dog modal)
+    / Improve UI/UX
+
+
+// NOT REQUIRED BUT WOULD BE NICE TO HAVE
+    / Add transitions and animations
+    / Would be nice if we could filter by size/coat/activity-level and other key dog characterists. This would require db and api update... maybe breeds could be an object that contains these types of characteristics.
+
+
+
+
+
+
+'set-cookie': 'AWSALB=bUVhGFrX3NRX+9cVbYIt7EhEkULKi+Ba7FFdUoqqDibkrmERCvXGkrEJVjRGn83INX661bUFPGLKicjiZPBl3udF6ll78eGEfQE9l0OowWnzsv5yMclYB7FQrVVm; Expires=Tue, 18 Feb 2025 23:19:26 GMT; Path=/, AWSALBCORS=bUVhGFrX3NRX+9cVbYIt7EhEkULKi+Ba7FFdUoqqDibkrmERCvXGkrEJVjRGn83INX661bUFPGLKicjiZPBl3udF6ll78eGEfQE9l0OowWnzsv5yMclYB7FQrVVm; Expires=Tue, 18 Feb 2025 23:19:26 GMT; Path=/; SameSite=None; Secure, fetch-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdCIsImVtYWlsIjoidGVzdEBlbWFpbC5jb20iLCJpYXQiOjE3MzkzMTU5NjYsImV4cCI6MTczOTMxOTU2Nn0.HEDD6EKhYVpwaTNnLnGm5clus3CxiCYx32Qejm0lWnQ; path=/; expires=Wed, 12 Feb 2025 00:19:26 GMT; samesite=none; secure; httponly',
